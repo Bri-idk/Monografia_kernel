@@ -1,0 +1,19 @@
+body {
+    background-color: #141414;
+}
+
+/* Color moradito para los titulos */
+.texto-morado {
+    color: #bb86fc;
+}
+
+/**pos "aqui" XD*/
+.aqui {
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+}
+
+.aqui:hover {
+    text-decoration: underline;
+}

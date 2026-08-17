@@ -1,50 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--?Link de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--?Mi hoja de estilocos-->
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Kernel</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+  </head>
+  <body>
+    <!--*NAVBAR DE BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kernel by Brian E.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#monografia">Temario</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Temas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#tema-1">Que es un kernel?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#tema-2">Que hace un kernel</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#tema-3">Linux vs GNU/Linux</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#tema-4">Tipos de Kernel</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    <!--*FIN NAVBAR-->
+
+    <!--*CAROUSEL-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/assets/kernel_xd.webp"
+            class="d-block w-100 object-fit-cover"
+            style="height: 450px"
+            alt="imagen cool en el carousel 1"
+          />
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h4>Kernel</h4>
+            <p>Que es un kernel?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/img1_kernel.webp"
+            class="d-block w-100 object-fit-cover"
+            style="height: 450px"
+            alt="imagen cool en el carousel 2"
+          />
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h4>Funcion del kernel</h4>
+            <p>Que hace un kernel?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/tux_loco.webp"
+            class="d-block w-100 object-fit-cover"
+            style="height: 450px"
+            alt="imagen cool en el carousel 3"
+          />
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+            <h4>Que es linux?</h4>
+            <p>En realidad que es linux?</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--*FIN CAROUSEL-->
+
+    <!--*CONTENIDO / MONOGRAFIA-->
+    <main class="container my-5" id="monografia">
+      <!--*titulo chido de la monografia-->
+      <div class="text-center text-white mb-5">
+        <h1 class="fw-bold">Monografía: El Kernel</h1>
+        <p class="text-secondary">Explicacion rapida y al grano</p>
+      </div>
+
+      <!--*grid de cards-->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!--*componente editado: Card 1-->
+        <div class="col" id="tema-1">
+          <div class="card h-100 bg-dark text-white border-secondary">
+            <div class="card-body">
+              <h5 class="card-title texto-morado">1. ¿Qué es un Kernel?</h5>
+              <h6 class="card-subtitle mb-2 text-secondary">
+                El mero mero del sistema
+              </h6>
+              <p class="card-text">
+                Es el nucleo de tu sistema operativo. Hace de puente entre lo
+                que ves en pantalla (programas) y los fierros de tu compu
+                (procesador, memoria, etc).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--*componente editado: Card 2-->
+        <div class="col" id="tema-2">
+          <div class="card h-100 bg-dark text-white border-secondary">
+            <div class="card-body">
+              <h5 class="card-title texto-morado">2. ¿Qué hace un Kernel?</h5>
+              <h6 class="card-subtitle mb-2 text-secondary">
+                La chamba principal
+              </h6>
+              <p class="card-text">
+                Reparte los recursos de la compu para que no explote:
+              </p>
+              <ul class="list-group list-group-flush rounded mb-3">
+                <li class="list-group-item bg-dark text-white border-secondary">
+                  Controla la memoria RAM.
+                </li>
+                <li class="list-group-item bg-dark text-white border-secondary">
+                  Le dice al CPU a que programa hacerle caso.
+                </li>
+                <li class="list-group-item bg-dark text-white border-secondary">
+                  Maneja los drivers de tu hardware.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--*componente editado: Card 3-->
+        <div class="col" id="tema-3">
+          <div class="card h-100 bg-dark text-white border-secondary">
+            <div class="card-body">
+              <h5 class="card-title texto-morado">
+                3. ¿Qué es Linux en realidad?
+              </h5>
+              <h6 class="card-subtitle mb-2 text-secondary">El dato curioso</h6>
+              <p class="card-text">
+                Linux en si no es todo el sistema operativo completo,
+                <strong>Linux es solo el kernel</strong>. Cuando le sumas
+                programas y utilidades ya se vuelve Debian, Ubuntu, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--*componente editado: Card 4-->
+        <div class="col" id="tema-4">
+          <div class="card h-100 bg-dark text-white border-secondary">
+            <div class="card-body">
+              <h5 class="card-title texto-morado">4. Tipos de Kernel</h5>
+              <h6 class="card-subtitle mb-2 text-secondary">
+                Como estan hechos
+              </h6>
+              <p class="card-text">
+                <strong>Monolítico:</strong> Todo corre en un solo bloque rápido
+                (como Linux).<br />
+                <strong>Microkernel:</strong> Solo lo básico corre en el centro
+                y lo demás va separado por modulos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--*fin grid de cards-->
+    </main>
+    <!--*FIN CONTENIDO-->
+
+    <!--*===FOOTER===-->
+    <footer
+      class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary"
+    >
+      <div class="container">
+        <p class="mb-0">&copy; copy pa mua, checa:</p>
+        <a class="aqui" href="https://github.com/Bri-idk">Aqui</a>
+      </div>
+    </footer>
+    <!--*===Fin footer===-->
+
     <!--?Script de bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
